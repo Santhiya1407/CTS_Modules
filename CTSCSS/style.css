@@ -1,0 +1,128 @@
+  /* 1. Body background image */
+body {
+  
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+/* 2. Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Header styles */
+#mainHeader {
+  background: linear-gradient(to right, #004e92, #000428);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 3. Event card styling */
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 5. Typography for descriptions */
+.description {
+  font-size: 16px;
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* 6. Link styling */
+a:link {
+  color: #00cc8b;
+}
+a:visited {
+  color: #008022;
+}
+a:hover {
+  color: #ff00dd;
+}
+a:active {
+  color: rgb(255, 0, 162);
+}
+
+/* 6. Navigation list */
+.nav {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 10px;
+  margin: 10px;
+}
+.nav li {
+  margin: 5px 0;
+}
+
+/* 7. Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 8. Form field highlighting */
+.highlight:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* 8. Visibility vs Display */
+.hidden {
+  visibility: hidden;
+}
+.not-shown {
+  display: none;
+}
+
+/* 9. Multi-column layout */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 10. Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .eventCard {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
